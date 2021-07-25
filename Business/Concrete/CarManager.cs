@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -31,6 +32,11 @@ namespace Business.Concrete
         public List<Car> GetByUnitModal(int minYear, int maxYear)
         {
             return _carDal.GetAll(p => p.CarYear>= minYear && p.CarYear < maxYear);
+        }
+
+        public List<CarDetailDto> GetCarDetail()
+        {
+            return _carDal.GetCarDetails();
         }
     }
 }

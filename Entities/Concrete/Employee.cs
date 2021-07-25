@@ -1,11 +1,11 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class Employee: IEntities
+    public class Employee: IEntity
     {
         public int EmployeeID { get; set; }
         public string EmployeeNumber { get; set; }
