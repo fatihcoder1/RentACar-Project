@@ -5,9 +5,8 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    public interface ICustomerServices 
+    public interface IOrderServices
     {
-        List<Customer> GetAll();
-        Customer GetById(int customerId);
+        List<RentalOrders> GetAll();
     }
 }
